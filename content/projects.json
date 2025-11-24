@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Non-Cartesian MRF Reconstruction",
+    "summary": "Spiral MRF with improved gridding; fast and robust.",
+    "tech": ["MRF", "GROG", "MRI"],
+    "link": "#",
+    "tags": ["research"],
+    "category": "research"
+  },
+  {
+    "name": "MRA Foundation Model",
+    "summary": "Anatomy-aware AI for neurovascular imaging.",
+    "tech": ["Deep Learning", "Medical Imaging", "MRA"],
+    "link": "#",
+    "tags": ["research"],
+    "category": "research"
+  },
+  {
+    "name": "MgB₂ Superconducting Joints",
+    "summary": "Fabrication and testing for next-gen MRI systems.",
+    "tech": ["Materials", "Superconductivity", "MRI"],
+    "link": "#",
+    "tags": ["research"],
+    "category": "research"
+  },
+  {
+    "name": "Postoperative Brain Function Mapping",
+    "summary": "Cortical change analysis with fMRI.",
+    "tech": ["fMRI", "Neuroimaging", "Statistics"],
+    "link": "#",
+    "tags": ["neuroimaging"],
+    "category": "research"
+  },
+  {
+    "name": "Super-Resolution T₁ Mapping",
+    "summary": "Fuse multi-orientation MRI to isotropic volumes.",
+    "tech": ["MRI", "Reconstruction", "Quantitative Mapping"],
+    "link": "#",
+    "tags": ["imaging"],
+    "category": "research"
+  },
+  {
+    "name": "Balance, Cognition, Depression",
+    "summary": "Population-level associations in Chinese adults.",
+    "tech": ["Epidemiology", "Statistics"],
+    "link": "#",
+    "tags": ["public-health"],
+    "category": "research"
+  },
+  {
+    "name": "UPVD Diagnosis",
+    "summary": "Radiomics + ML on vestibular MRI.",
+    "tech": ["Radiomics", "Machine Learning", "MRI"],
+    "link": "#",
+    "tags": ["ml"],
+    "category": "research"
+  },
+  {
+    "name": "Personal Website",
+    "summary": "GitHub Pages-based personal homepage and blog.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "repo": "https://github.com/yourname/yourname.github.io",
+    "link": "index.html",
+    "tags": ["web"],
+    "category": "personal"
+  }
+]

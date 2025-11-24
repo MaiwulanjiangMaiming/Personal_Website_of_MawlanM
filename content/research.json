@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Advanced Non-Cartesian MR Fingerprinting Reconstruction with Improved GROG Framework",
+    "institution": "The Hong Kong Polytechnic University, Dept. of Health Technology and Informatics",
+    "location": "Hong Kong",
+    "period": "Aug 2025 – Present",
+    "supervisors": "Prof. Tian Li & Dr. Chenyang Liu",
+    "summary": "Accelerated non-Cartesian spiral MRF reconstruction via reengineered self-calibrating GROG for precise spiral-to-Cartesian gridding.",
+    "bullets": [
+      "Resolved the fundamental speed bottleneck of non-Cartesian MRF to enable fast, high-fidelity quantitative imaging."
+    ]
+  },
+  {
+    "title": "Large-Scale MRA Imaging Database and Generalist AI Foundation Model for Cerebrovascular Stenosis/Occlusion",
+    "institution": "Peking University, Institute of Medical Technology",
+    "location": "Beijing, China",
+    "period": "Aug 2025 – Present",
+    "supervisors": "Prof. Song Gao",
+    "summary": "Leading an anatomy-aware AI foundation model for automated cerebrovascular diagnosis with multicenter MRA database construction.",
+    "bullets": [
+      "Integrates advanced deep learning to overcome subjectivity and inconsistency in traditional vascular analysis."
+    ]
+  },
+  {
+    "title": "Fabrication and Testing of High-Performance Superconducting Joints of Magnesium Diboride",
+    "institution": "Peking University, School of Physics",
+    "location": "Beijing, China",
+    "period": "Oct 2024 – Present",
+    "supervisors": "Prof. Song Gao & Prof. Xinwei Cai",
+    "summary": "First superconducting joints for multi-filament MgB₂ wires using Mg(BH₄)₂ precursor; device and process optimization for joint density.",
+    "bullets": [
+      "Developed custom filling device and optimized joint density to enable next-generation MgB₂ MRI systems."
+    ]
+  },
+  {
+    "title": "Postoperative Brain Function Mapping Using fMRI",
+    "institution": "Peking University, The National Institute of Health Data Science",
+    "location": "Beijing, China",
+    "period": "Sep 2023 – Present",
+    "supervisors": "Prof. Yao Sui",
+    "summary": "First fMRI study validating cortical functional changes following Cuistow surgery.",
+    "bullets": [
+      "Led patient recruitment, MRI scanning, and statistical analysis for actionable neuroimaging insights in postoperative assessment."
+    ]
+  },
+  {
+    "title": "Super-Resolution T₁ Mapping from Multi-Orientation MRI Acquisitions",
+    "institution": "Peking University, The National Institute of Health Data Science (with Boston Children's Hospital CRL)",
+    "location": "Beijing, China / Boston, USA",
+    "period": "May – Nov 2024",
+    "supervisors": "Prof. Yao Sui",
+    "summary": "Accelerated reconstruction pipeline fusing orthogonal MRI acquisitions into isotropic high-resolution volumes with quantitative T₁ and PD maps.",
+    "bullets": [
+      "Iterative estimation combining multi-orientation acquisitions for improved resolution."
+    ]
+  },
+  {
+    "title": "Standing Balance, Cognitive Function, and Depression in Middle-Aged and Elderly Adults (China)",
+    "institution": "Peking University, National School of Development, CHARLS Program",
+    "location": "Beijing, China",
+    "period": "Oct 2023 – Jan 2024",
+    "supervisors": "Prof. Yaohui Zhao",
+    "summary": "Population-based analysis linking standing balance with cognitive and depressive status using three waves of CHARLS data.",
+    "bullets": [
+      "Validated clinically meaningful associations for aging research and public health."
+    ]
+  },
+  {
+    "title": "Enhanced Vestibular Disorder Diagnosis Using Machine Learning and Structural Data Integration (UPVD)",
+    "institution": "Peking University, Aerospace Center Hospital",
+    "location": "Beijing, China",
+    "period": "Sep 2023 – Jun 2024",
+    "supervisors": "Prof. Xu Yang",
+    "summary": "Radiomics and machine learning on 3D-FLAIR/T1 vestibular MRI to improve UPVD diagnosis.",
+    "bullets": [
+      "Extracted >1,500 features and implemented XGBoost classification for clinically actionable insights."
+    ]
+  }
+]
