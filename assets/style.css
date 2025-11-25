@@ -55,6 +55,12 @@ article{animation:fadeUp .25s ease}
 .project-line{padding:.5rem .75rem;border:1px dashed var(--border);border-radius:999px}
 .project-line .name{font-weight:600}
 .project-line .tech{color:var(--muted)}
+.two-col{display:grid;grid-template-columns:12rem 1fr;gap:var(--space-3)}
+.timeline{position:sticky;top:72px;align-self:start}
+.timeline a{display:block;padding:.4rem .5rem;border-radius:999px;color:var(--muted);border:1px solid var(--border);margin-bottom:.5rem;text-align:center;background:var(--card);transition:all .2s ease}
+.timeline a.active{color:var(--text);border-color:var(--accent2);box-shadow:0 0 0 1px var(--accent2) inset}
+.year-heading{font-family:'EB Garamond',serif;margin:1rem 0 .5rem}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}.timeline{position:relative;display:flex;gap:.5rem;flex-wrap:wrap;top:auto;margin-bottom:1rem}.timeline a{flex:0 0 auto}}
 .about-header{max-width:48rem;margin:2rem auto 1rem}
 .about-name{font-family:'EB Garamond',serif;font-weight:600;font-size:clamp(2rem,3vw,2.75rem);letter-spacing:.02em;margin:0}
 .about-contact{color:var(--muted);margin-top:.25rem}
