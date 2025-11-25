@@ -1,6 +1,6 @@
 function setActiveNav(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav a').forEach(function(a){var h=a.getAttribute('href');if(h===p)a.classList.add('active')})}
-function j(u){return fetch(u).then(function(r){return r.json()})}
-function t(u){return fetch(u).then(function(r){return r.text()})}
+function j(u){var qs=u.indexOf('?')>=0?'&':'?';return fetch(u+qs+'t='+Date.now(),{cache:'no-store'}).then(function(r){return r.json()})}
+function t(u){var qs=u.indexOf('?')>=0?'&':'?';return fetch(u+qs+'t='+Date.now(),{cache:'no-store'}).then(function(r){return r.text()})}
 function fmtDate(s){var d=new Date(s);return d.getFullYear()+"-"+(String(d.getMonth()+1).padStart(2,'0'))+"-"+(String(d.getDate()).padStart(2,'0'))}
 function cardHtml(title,meta,desc,href,tags){var tagHtml=(tags||[]).map(function(x){return '<span class="pill">'+x+'</span>'}).join('');return '<div class="card"><h3><a href="'+href+'">'+title+'</a></h3><div class="muted">'+meta+'</div><p>'+desc+'</p><div>'+tagHtml+'</div></div>'}
 function sortByDateDesc(list){return (list||[]).slice().sort(function(a,b){var da=new Date(a.date||0).getTime();var db=new Date(b.date||0).getTime();return db-da})}
