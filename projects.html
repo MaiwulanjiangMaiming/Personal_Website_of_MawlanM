@@ -23,19 +23,19 @@
 </header>
 <main class="container">
   <h1>Projects</h1>
-  <h2>Personal & Interesting</h2>
-  <div id="projects-personal" class="projects-lines"></div>
+  <p class="muted">Public repositories from <a href="https://github.com/MaiwulanjiangMaiming" target="_blank" rel="noopener">@MaiwulanjiangMaiming</a></p>
+  <div id="github-repos" class="grid"></div>
 </main>
 <footer class="site-footer">
   <div class="container">© <span id="year"></span> Maiwulanjiang Maiming
-    <div class="motto">“Everything negative — pressure, challenges — is all an opportunity for me to rise.” - Kobe Bryant</div>
+    <div class="motto">"Everything negative — pressure, challenges — is all an opportunity for me to rise." - Kobe Bryant</div>
   </div>
 </footer>
 <script src="assets/site.js"></script>
 <script>
 setActiveNav();
 document.getElementById('year').textContent = new Date().getFullYear();
-renderPersonalProjects();
+renderGitHubRepos('MaiwulanjiangMaiming');
 </script>
 </body>
 </html>
