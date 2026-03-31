@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Moments</title>
+<meta name="description" content="Personal moments and gallery from life and travel.">
+<meta property="og:title" content="Moments - Maiwulanjiang Maiming">
+<meta property="og:description" content="Personal gallery and life moments.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Moments - Maiwulanjiang Maiming</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -25,16 +30,7 @@
   <h1>Moments</h1>
   <div id="gallery" class="gallery"></div>
 </main>
-<footer class="site-footer">
-  <div class="container">© <span id="year"></span> Maiwulanjiang Maiming
-    <div class="motto">“Everything negative — pressure, challenges — is all an opportunity for me to rise.” - Kobe Bryant</div>
-  </div>
-</footer>
 <script src="assets/site.js"></script>
-<script>
-setActiveNav();
-document.getElementById('year').textContent = new Date().getFullYear();
-renderMoments();
-</script>
+<script>renderMoments();</script>
 </body>
 </html>

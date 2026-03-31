@@ -10,11 +10,11 @@
   --duration-slow:500ms;
   --duration-slower:700ms
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap');
 *{box-sizing:border-box}
 html,body{height:100%}
 html{font-size:clamp(15px,1.2vw,18px)}
-body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.7 Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;transition:background-color var(--duration-normal) var(--ease-smooth),color var(--duration-normal) var(--ease-smooth)}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.7 Optima,Futura,DIN,'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;transition:background-color var(--duration-normal) var(--ease-smooth),color var(--duration-normal) var(--ease-smooth)}
 @keyframes pageIn{
   from{opacity:0}
   to{opacity:1}
@@ -33,7 +33,7 @@ a:hover{color:var(--accent)}
 .nav a.active{color:var(--accent)}
 .site-footer{border-top:1px solid var(--border);margin-top:2.5rem;padding:1.25rem 0;color:var(--muted)}
 .hero{padding:52px 0 24px}
-.hero h1{margin:0 0 .5rem;font-family:'EB Garamond',serif;font-weight:600;animation:fadeUp var(--duration-slow) var(--ease-out-expo)}
+.hero h1{margin:0 0 .5rem;font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:600;letter-spacing:.01em;animation:fadeUp var(--duration-slow) var(--ease-out-expo)}
 .hero p{animation:fadeUp var(--duration-slow) var(--ease-out-expo) 100ms backwards}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .list{display:flex;flex-direction:column;gap:1rem}
@@ -47,65 +47,39 @@ a:hover{color:var(--accent)}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .gallery img{width:100%;height:clamp(14rem,20vw,18rem);object-fit:cover;border-radius:var(--radius);border:1px solid var(--border);cursor:zoom-in;transition:transform var(--duration-normal) var(--ease-out-expo),box-shadow var(--duration-normal) var(--ease-smooth);will-change:transform}
 .gallery img:hover{transform:scale(1.03);box-shadow:0 8px 24px rgba(0,0,0,.3)}
-article{max-width:760px}
 article{max-width:48rem}
-article h1{margin:0 0 .75rem;font-family:'EB Garamond',serif;font-weight:600}
-.page{max-width:760px}
-.page h2{font-family:'EB Garamond',serif;font-weight:600}
-.page{max-width:48rem}
-.motto{font-style:italic;font-family:'EB Garamond',serif;color:var(--muted);font-size:.95rem}
-.brand{font-family:'EB Garamond',serif;font-weight:600}
+article h1{margin:0 0 .75rem;font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:600;letter-spacing:.01em}
+article{animation:fadeUp var(--duration-slow) var(--ease-out-expo)}
+.motto{font-style:italic;font-family:'Adobe Garamond',Garamond,'Cormorant Garamond',serif;background:linear-gradient(90deg,#b700ff 0%,#9d00ff 30%,#ffd700 70%,#ffed4e 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-size:1.1rem;letter-spacing:.02em;font-weight:600;text-shadow:0 0 30px rgba(185,0,255,.3);filter:drop-shadow(0 0 10px rgba(255,215,0,.2))}
+.brand{font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:700;letter-spacing:.01em;font-size:1.4rem;background:linear-gradient(90deg,#00ffaa 0%,#0099ff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 20px rgba(0,153,255,.4);filter:drop-shadow(0 0 8px rgba(0,255,170,.3))}
 .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0);display:none;align-items:center;justify-content:center;z-index:100;backdrop-filter:blur(0px);transition:background var(--duration-normal) var(--ease-smooth),backdrop-filter var(--duration-normal) var(--ease-smooth)}
 .lightbox.open{display:flex;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);animation:fadeIn var(--duration-normal) var(--ease-smooth)}
 .lightbox img{max-width:90vw;max-height:85vh;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,.35);transform:scale(.85) translateY(20px);opacity:0;transition:transform var(--duration-slow) var(--ease-out-expo),opacity var(--duration-normal) var(--ease-smooth);will-change:transform,opacity}
 .lightbox.open img{transform:scale(1) translateY(0);opacity:1}
-@keyframes fadeIn{
-  from{opacity:0}
-  to{opacity:1}
-}
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(16px)}
-  to{opacity:1;transform:translateY(0)}
-}
-@keyframes fadeScale{
-  from{opacity:0;transform:scale(0.95)}
-  to{opacity:1;transform:scale(1)}
-}
-@keyframes slideInLeft{
-  from{opacity:0;transform:translateX(-20px)}
-  to{opacity:1;transform:translateX(0)}
-}
-@keyframes slideInRight{
-  from{opacity:0;transform:translateX(20px)}
-  to{opacity:1;transform:translateX(0)}
-}
-@keyframes pulse{
-  0%,100%{opacity:1}
-  50%{opacity:.6}
-}
-@keyframes shimmer{
-  0%{background-position:-200% 0}
-  100%{background-position:200% 0}
-}
-article{animation:fadeUp var(--duration-slow) var(--ease-out-expo)}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeScale{from{opacity:0;transform:scale(0.95)}to{opacity:1;transform:scale(1)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
 .card-reveal{opacity:0;transform:translateY(20px);transition:opacity var(--duration-slow) var(--ease-out-expo),transform var(--duration-slow) var(--ease-out-expo)}
 .card-reveal.revealed{opacity:1;transform:translateY(0)}
 .card.active-scale{transform:scale(0.97);transition-duration:var(--duration-fast)}
-@keyframes reveal{
-  from{opacity:0;transform:translateY(24px)}
-  to{opacity:1;transform:translateY(0)}
-}
+@keyframes reveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes floatUp{0%{opacity:1;transform:translate(-50%,-50%) translateY(0) rotateZ(0deg)}100%{opacity:0;transform:translate(-50%,-50%) translateY(-100px) rotateZ(20deg)}}
+.click-emoji{position:fixed;font-size:2rem;pointer-events:none;user-select:none;animation:floatUp 1.5s ease-out forwards;z-index:9999}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}
   .card-reveal{opacity:1;transform:none}
 }
 @media (prefers-color-scheme: light){:root{--bg:#f6f7fb;--card:#ffffff;--text:#0e1116;--muted:#3a3f46;--primary:#005f8f;--accent:#007d65;--accent2:#1185ff;--border:#d9dee6;--header-bg:rgba(255,255,255,.85);--pill-bg:#eef2f7;--pill-fg:#3a3f46;--pill-border:#d9dee6;color-scheme:light dark}}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.nav{flex-wrap:wrap}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.nav{flex-wrap:wrap}.card-reveal{animation-delay:0 !important}.research-item{animation-delay:0 !important}.project-line{animation-delay:0 !important}}
 .research{display:flex;flex-direction:column;gap:var(--space-3)}
 .research-item{padding:1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);transition:transform var(--duration-normal) var(--ease-out-expo),box-shadow var(--duration-normal) var(--ease-smooth)}
 .research-item:hover{transform:translateX(4px);box-shadow:0 4px 16px rgba(0,0,0,.2)}
-.research-item h3{margin:0 0 .5rem;font-family:'EB Garamond',serif}
+.research-item h3{margin:0 0 .5rem;font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:600}
 .research-item .meta-line{display:flex;flex-wrap:wrap;gap:1rem;margin:.25rem 0}
 .research-item .label{color:var(--muted);margin-right:.35rem}
 .research-item .value{color:var(--accent2)}
@@ -119,16 +93,16 @@ article{animation:fadeUp var(--duration-slow) var(--ease-out-expo)}
 .timeline a{display:block;padding:.4rem .5rem;border-radius:999px;color:var(--muted);border:1px solid var(--border);margin-bottom:.5rem;text-align:center;background:var(--card);transition:all var(--duration-normal) var(--ease-out-expo)}
 .timeline a:hover{color:var(--text);border-color:var(--accent2);transform:translateX(4px)}
 .timeline a.active{color:var(--text);border-color:var(--accent2);box-shadow:0 0 0 1px var(--accent2) inset,0 4px 12px rgba(0,255,163,.15)}
-.year-heading{font-family:'EB Garamond',serif;margin:1rem 0 .5rem}
+.year-heading{font-family:Optima,Futura,DIN,'DM Sans',sans-serif;margin:1rem 0 .5rem;font-weight:600;letter-spacing:.02em}
 @media(max-width:900px){.two-col{grid-template-columns:1fr}.timeline{position:relative;display:flex;gap:.5rem;flex-wrap:wrap;top:auto;margin-bottom:1rem}.timeline a{flex:0 0 auto}}
 .about-header{max-width:48rem;margin:2rem auto 1rem}
-.about-name{font-family:'EB Garamond',serif;font-weight:600;font-size:clamp(2rem,3vw,2.75rem);letter-spacing:.02em;margin:0}
+.about-name{font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:600;font-size:clamp(2rem,3vw,2.75rem);letter-spacing:.05em;margin:0}
 .about-contact{color:var(--muted);margin-top:.25rem}
 .cv-section{max-width:48rem;margin:1.25rem auto}
-.cv-heading{font-family:'EB Garamond',serif;font-variant-caps:small-caps;letter-spacing:.06em;margin:0 0 .5rem}
+.cv-heading{font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-variant-caps:small-caps;letter-spacing:.08em;margin:0 0 .5rem;font-weight:600}
 .cv-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;transition:transform var(--duration-normal) var(--ease-out-expo),box-shadow var(--duration-normal) var(--ease-smooth)}
 .cv-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
-.cv-title{font-family:'EB Garamond',serif;font-weight:600;font-size:1.125rem;margin:0 0 .25rem}
+.cv-title{font-family:Optima,Futura,DIN,'DM Sans',sans-serif;font-weight:600;font-size:1.125rem;margin:0 0 .25rem;letter-spacing:.01em}
 .cv-meta{color:var(--muted)}
 .github-repo{display:flex;flex-direction:column}
 .github-repo h3 a{display:flex;align-items:center;gap:.5rem}

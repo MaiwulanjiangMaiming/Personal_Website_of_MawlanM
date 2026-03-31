@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog</title>
+<meta name="description" content="Blog posts about medical imaging, research insights, and technical topics.">
+<meta property="og:title" content="Blog - Maiwulanjiang Maiming">
+<meta property="og:description" content="Articles and insights on medical imaging and research.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<title>Blog - Maiwulanjiang Maiming</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -25,17 +30,8 @@
   <h1>Blog</h1>
   <div id="posts" class="list"></div>
 </main>
-<footer class="site-footer">
-  <div class="container">© <span id="year"></span> Maiwulanjiang Maiming
-    <div class="motto">“Everything negative — pressure, challenges — is all an opportunity for me to rise.” - Kobe Bryant</div>
-  </div>
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="assets/site.js"></script>
-<script>
-setActiveNav();
-document.getElementById('year').textContent = new Date().getFullYear();
-renderBlogList();
-</script>
+<script>renderBlogList();</script>
 </body>
 </html>

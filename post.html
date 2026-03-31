@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Post</title>
+<meta name="description" content="Blog post by Maiwulanjiang Maiming.">
+<meta property="og:title" content="Post - Maiwulanjiang Maiming">
+<meta property="og:description" content="Blog post about medical imaging and research.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<title>Blog Post - Maiwulanjiang Maiming</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -24,17 +29,8 @@
 <main class="container">
   <article id="post"></article>
 </main>
-<footer class="site-footer">
-  <div class="container">© <span id="year"></span> Maiwulanjiang Maiming
-    <div class="motto">“Everything negative — pressure, challenges — is all an opportunity for me to rise.” - Kobe Bryant</div>
-  </div>
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="assets/site.js"></script>
-<script>
-setActiveNav();
-document.getElementById('year').textContent = new Date().getFullYear();
-renderPost();
-</script>
+<script>renderPost();</script>
 </body>
 </html>
