@@ -15,9 +15,10 @@
   --font-mono:'JetBrains Mono','Fira Code',monospace
 }
 *{box-sizing:border-box}
-html,body{height:100%}
-html{font-size:clamp(15px,1.2vw,18px)}
-body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.75 var(--font-body);transition:background-color var(--duration-normal) var(--ease-smooth),color var(--duration-normal) var(--ease-smooth)}
+html,body{min-height:100%}
+html{font-size:clamp(15px,1.2vw,18px);background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.75 var(--font-body);transition:background-color var(--duration-normal) var(--ease-smooth),color var(--duration-normal) var(--ease-smooth);min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
 @keyframes pageIn{from{opacity:0}to{opacity:1}}
 html{scroll-behavior:smooth}
 a{color:var(--primary);text-decoration:none;transition:color var(--duration-fast) var(--ease-smooth)}
@@ -25,7 +26,7 @@ a:hover{color:var(--accent)}
 .container{max-width:72rem;margin:0 auto;padding:0 var(--space-3)}
 .site-header{position:sticky;top:0;z-index:10;background:var(--header-bg);backdrop-filter:saturate(140%) blur(16px);border-bottom:1px solid var(--border);transition:transform var(--duration-normal) var(--ease-smooth)}
 .site-header .container{display:flex;align-items:center;justify-content:space-between;min-height:3.75rem}
-.brand{font-family:var(--font-heading);font-weight:600;font-size:1.35rem;letter-spacing:-.01em;background:linear-gradient(135deg,var(--accent) 0%,var(--primary) 50%,var(--accent2) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(0,180,220,.25))}
+.brand{font-family:var(--font-heading);font-weight:600;font-size:1.35rem;letter-spacing:-.01em;background:linear-gradient(135deg,#00ffaa 0%,#0099ff 50%,#00ccee 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(0,153,255,.35))}
 .nav{display:flex;gap:4px;align-items:center}
 .nav a{padding:.5rem .75rem;color:var(--muted);position:relative;font-size:.9rem;font-weight:500;letter-spacing:.01em;border-radius:var(--radius);transition:color var(--duration-fast) var(--ease-smooth),background-color var(--duration-fast) var(--ease-smooth)}
 .nav a::after{content:'';position:absolute;bottom:.25rem;left:50%;width:0;height:2px;background:var(--accent);border-radius:1px;transform:translateX(-50%);transition:width var(--duration-normal) var(--ease-out-expo)}
